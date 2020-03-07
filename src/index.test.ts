@@ -16,6 +16,9 @@ jest.doMock("child_process", () => ({ spawn }));
 import { listFiles } from ".";
 
 describe("list", () => {
+  beforeEach(() => {
+    jest.resetAllMocks();
+  });
   it("should run spawn", async () => {
     await listFiles(() => {
       console.log("callback");
