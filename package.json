@@ -5,7 +5,8 @@
   "author": "Rudi Yardley",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/index"
+    "start": "ts-node src/index",
+    "test": "jest --coverage"
   },
   "devDependencies": {
     "@types/jest": "^25.1.4",
@@ -14,5 +15,8 @@
     "ts-jest": "^25.2.1",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "tslib": "^1.11.1"
   }
 }

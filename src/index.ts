@@ -8,7 +8,3 @@ export function listFiles(callback: (msg: string) => void) {
     });
   });
 }
-
-// listFiles(msg => {
-//   console.log(msg);
-// });

@@ -2,7 +2,7 @@ let onSpy: jest.Mock;
 
 const spawn = jest.fn(() => {
   let localcb = () => {};
-  onSpy = jest.fn(function on(evt: string, cb: () => void) {
+  onSpy = jest.fn(function on(_: string, cb: () => void) {
     localcb = cb;
   });
   setTimeout(() => {
